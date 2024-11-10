@@ -79,7 +79,7 @@
                         </div>
                     </form>
 
-                    <form id="DivLogin">
+                    <div id="DivLogin">
                         <div id="ConLog">
                             <h2 id="ConLogHeader2">Why create an Account</h2>
                             <br>
@@ -109,7 +109,7 @@
                             <button type="button" id="SubMe">LOGIN NOW</button>
                             </a>
                         </div>
-                    </form>
+                    </div>
 
                 </div>
             </div>
