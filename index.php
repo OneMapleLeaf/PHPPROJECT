@@ -16,6 +16,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>NIGGA~</h1>
+    <h1>Hello! <?php echo $user ?>~</h1>
 </body>
 </html>

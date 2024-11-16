@@ -1,3 +1,6 @@
+<?php 
+    include "register_logic.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,11 @@
 
     <title>Login Page</title>
 </head>
+<script>
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
 <body>
         <main>
 
@@ -34,47 +42,39 @@
                         <button id="shifter">LEARN MORE</button>
                     </div>
 
-                    <form id="DivRegistration" action="" method="">
+                    <form id="DivRegistration" action="" method="POST">
                         <div id="ConRegistration">
                             <h2 id="ConRegHeader">Create an Account</h2>
 
-                            <label for="fname"><b>First Name:</b></label>
+                            <label for="fname" name="first_name"><b>First Name:</b></label>
                             <input type="text" id="fname" placeholder="Enter First Name" minlength="6" maxlength="12" required>
                             <br>
                             <br>
 
-                            <label for="lname"><b>Last Name:</b></label>
+                            <label for="lname" name="last_name"><b>Last Name:</b></label>
                             <input type="text" id="lname" placeholder="Enter Last Name" minlength="6" maxlength="12" required>
                             <br>
                             <br>
 
-                            <label for="username"><b>Username:</b></label>
+                            <label for="username" name="user_name"><b>Username:</b></label>
                             <input type="text" id="username" placeholder="Enter Username" minlength="6" maxlength="12" required>
                             <br>
                             <br>
 
-                            <label for="email"><b>Email:</b></label>
+                            <label for="email" name="user_email"><b>Email:</b></label>
                             <input type="email" id="email" placeholder="Enter Email" required>
                             <br>
                             <br>
 
-                            <label for="password"><b>Password:</b></label>
+                            <label for="password" name="user_pass"><b>Password:</b></label>
                             <input type="password" id="password" placeholder="Enter Password" minlength="6" required>
-                            <br>
-                            <br>
+                      
 
-                            <label for="usertype"><b>User Type:</b></label>
-                            <br>
-
-                            <select id="usertype">
-                                <option value="Regular">Regular</option>
-                                <option value="Admin">Admin</option>
-                            </select>
                             <br>
                             <br>
                             <br>
 
-                            <button type="submit" id="SubMe">REGISTER</button>
+                            <button type="submit" name="submit" id="SubMe">REGISTER</button>
                             <br>
                         </div>
                     </form>
